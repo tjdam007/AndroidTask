@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AndroidTask</string>
+    <string name="try_back_office_noida_12th_pass">Try Back Office, Noida, 12th Pass</string>
+    <string name="filter">"Filters"</string>
+    <string name="no_filter_available">No filter available</string>
+    <string name="no_jobs_post_available">No jobs post available</string>
+    <string name="please_wait_fetching_jobs">Please wait\nFetching jobs…</string>
+    <string name="posted_on">Posted %s</string>
+    <string name="cancel">Cancel</string>
+    <string name="textContinue">Continue</string>
+    <string name="getting_jobs">Getting more jobs…</string>
+    <string name="no_more_data">No More Data</string>
+    <string name="network_error">Network error.</string>
+    <string name="requirements">"&#8226; 12th Pass and above\n\n&#8226; Shall be able to speak fluent english\n\n&#8226; Handle customer inbound and outbound calls\n\n&#8226; Shall be able to manage accounts"</string>
+    <string name="get_notified">Get notified on whatsapp for similar jobs on 09450591089</string>
+    <string name="please_enter">Please enter atleast 3 characters</string>
+    <string name="searching">Searching…</string>
+    <string name="jobs_found">%d Jobs found</string>
+</resources>

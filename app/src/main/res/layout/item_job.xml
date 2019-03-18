@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/item_shadow">
+
+    <TextView
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Office Assistant Job - "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvJobTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageCompanyLogo" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <ImageView android:id="@+id/imageCompanyLogo"
+               android:background="@color/lighterGray"
+               android:layout_width="60dp"
+               android:layout_height="60dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:text="Digital Marketing Pvt. Ltd."
+            android:id="@+id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvJobTitle"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageCompanyLogo" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/tvJobTitle" android:layout_marginTop="16dp"/>
+
+    <TextView
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_outline_location_on_24px"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:text="123, Karol Bagh, New Delhi"
+            android:id="@+id/tvCompanyAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvJobTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvCompanyName"
+            android:layout_marginTop="16dp"/>
+
+    <TextView
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/lightSlateGray"
+            android:text="(1.2 kms away)"
+            android:id="@+id/tvKmAway"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@+id/tvCompanyAddress"
+            app:layout_constraintStart_toEndOf="@+id/tvCompanyAddress" android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvCompanyAddress" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+            android:text="₹ 15,000 - 20,000 per month"
+            android:id="@+id/tvSalaryRange"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvJobTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvCompanyAddress" android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+    <TextView
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:text="Posted 5 days ago"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPostedOn"
+            app:layout_constraintTop_toBottomOf="@+id/tvSalaryRange" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@+id/tvKnowMore"
+            android:layout_marginEnd="8dp"/>
+
+    <TextView
+            android:id="@+id/tvKnowMore"
+            android:textColor="@color/mediumPurple"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:text="Know more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPostedOn"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPostedOn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

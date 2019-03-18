@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_margin="25dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/tvFilterHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="Location"/>
+
+
+    <com.google.android.material.chip.ChipGroup
+            android:layout_marginTop="20dp"
+            android:id="@+id/chipGroup"
+            app:chipSpacingHorizontal="8dp"
+            app:chipSpacingVertical="10dp"
+            app:singleSelection="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

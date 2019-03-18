@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/bottom_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText android:id="@+id/etSearch"
+                          android:paddingStart="2dp"
+                          android:maxLines="1"
+                          android:inputType="text"
+                          android:scrollHorizontally="true"
+                          android:ellipsize="end"
+                          android:background="@android:color/transparent"
+                          android:paddingEnd="10dp"
+                          android:layout_marginEnd="@dimen/dp5"
+                          android:paddingTop="10dp"
+                          android:paddingBottom="10dp"
+                          android:layout_alignParentStart="true"
+                          android:layout_toStartOf="@+id/imageSearch"
+                          android:hint="@string/try_back_office_noida_12th_pass"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"/>
+
+                <ImageView
+                        android:id="@+id/imageSearch"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignBottom="@+id/etSearch"
+                        android:layout_alignTop="@+id/etSearch"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:layout_height="wrap_content">
+
+                <com.google.android.material.chip.Chip
+                        android:text="@string/filter"
+                        app:chipStartPadding="15dp"
+                        app:chipEndPadding="15dp"
+                        app:checkedIcon="@drawable/ic_filter"
+                        app:chipIcon="@drawable/ic_filter_unchecked"
+                        app:chipBackgroundColor="@color/white"
+                        android:layoutDirection="rtl"
+                        android:checkable="true"
+                        app:chipIconSize="20dp"
+                        app:chipStrokeWidth="1dp"
+                        android:id="@+id/buttonFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvFilter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/buttonFilter"
+                        android:layout_alignTop="@+id/buttonFilter"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignBottom="@+id/buttonFilter"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvJobs"
+            android:layout_marginTop="8dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <TextView
+            android:text="@string/no_jobs_post_available"
+            android:textColor="@color/darkSlateGray"
+            android:id="@+id/tvNoJobs"
+            android:gravity="center"
+            android:layout_gravity="center"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
